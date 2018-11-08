@@ -1,0 +1,30 @@
+name: AtomicSidebar
+author: xFlarinFlint
+version: 0.1.0-SNAPSHOT
+main: com.gmail.flintintoe.AtomicSidebar
+
+depend: [ProtocolLib]
+softdepend: [PlaceholderAPI]
+
+commands:
+  asidebar:
+    description: Atomic sidebar commands
+    aliases: [asb]
+    usage: /asidebar
+    permission: atomicsidebar
+
+permissions:
+  atomicsidebar:
+    description: Universal permission node for all AtomicSidebar commands
+    children:
+      atomicsidebar.use:
+        default: true
+      atomicsidebar.see:
+        default: true
+      atomicsidebar.admin.use:
+        default: op
+      atomicsidebar.admin.see:
+        default: op
+      atomicsidebar.admin.reload:
+        default: op
+

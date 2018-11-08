@@ -1,0 +1,93 @@
+#           __ _
+#  __   __ / _| | __ _ _ __ ___
+#  \ \_/ /| |_| |/ _` | `__/ _ \
+#   > _ < |  _| | |_| | |  | __/
+#  /_/ \_\|_| |_|\__,_|_|  \___|
+# AtomicSidebar - by xFlarinFlint (flintintoe or Flarin)
+
+# Edit sidebar configurations here.
+
+# Please do not change this value to avoid unexpected errors
+version: "0.1.0"
+
+## GENERAL GUIDELINES:
+#
+# - Aliases are alternative names a player can use to call the sidebar
+# - Header is what is displayed at the top of the sidebar
+# - Entries are the contents of the sidebar
+#
+# NOTES:
+# - Please use unique names for each sidebar
+# - A line can have a maximum of 40 characters (If the line has more than 40 characters the line will be cut off at the end)
+# - When there is a duplicate line in a sidebar, the plugin will add spaces to prevent duplicates from ruining the sidebar
+# - Color codes are supported (Use &)
+#
+# EXAMPLE:
+# examplesidebar:
+#   aliases:
+#   - "example"
+#   header: "ExampleServer"
+#   entries:
+#   - "Hi"
+# Check the plugin wiki for placeholders and more!
+# https://github.com/flintintoe/simpleSidebar/wiki
+##
+sidebars:
+  main:
+    aliases:
+    - "main"
+    - "home"
+    - "welcome"
+    header: "&6&lServer info"
+    entries:
+    - ""
+    - " Welcome, &a%player%&r!"
+    - "   Today is %datetime.dd/MM/yyyy%"
+    - ""
+    - "   [&bTime&r]"
+    - "    %time.HH:mm:ss% %timezone%"
+    - "   [&bCash&r]"
+    - "     $%balance%"
+    - "   [&bRegions&r]"
+    - "     %region.1%"
+    - "     %region.2%"
+    - "     %region.3%"
+    - ""
+    - " Time left till AFK: %afktimeLeft%"
+    - " %region.p/xFlarinFlint.1,m ,."
+    - ""
+  miningstats:
+    aliases:
+    - "minestats"
+    - "minestat"
+    header: "&3&lServer stats"
+    entries:
+    - ""
+    - " Stone: %mstat.MINE_BLOCK.STONE%"
+    - ""
+    - " Coal: %mstat.MINE_BLOCK.COAL_ORE%"
+    - " Iron: %mstat.MINE_BLOCK.IRON_ORE%"
+    - " Redstone: %mstat.MINE_BLOCK.REDSTONE_ORE%"
+    - ""
+    - " Lapiz lazuli: %mstat.MINE_BLOCK_LAPIZ_ORE%"
+    - " Gold: %mstat.MINE_BLOCK.GOLD_ORE%"
+    - " Quartz: %mstat.MINE_BLOCK.QUARTZ_ORE%"
+    - ""
+    - " Emerald: %mstat.MINE_BLOCK.EMERALD_ORE%"
+    - " Diamond: %mstat.MINE_BLOCK.DIAMOND_ORE%"
+    - ""
+  afk:
+    aliases:
+    - "awayfromkeyboard"
+    header: "&3&lFlint Server"
+    entries:
+    - ""
+    - ""
+    - ""
+    - ""
+    - " You have been &c&lAFK"
+    - " for: "
+    - ""
+    - " %afktime.m% minutes %afktime.s% seconds"
+    - ""
+    - ""

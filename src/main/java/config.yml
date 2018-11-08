@@ -1,0 +1,25 @@
+#           __ _
+#  __   __ / _| | __ _ _ __ ___
+#  \ \_/ /| |_| |/ _` | `__/ _ \
+#   > _ < |  _| | |_| | |  | __/
+#  /_/ \_\|_| |_|\__,_|_|  \___|
+# Simple Sidebar - by xFlarinFlint (flintintoe or Flarin)
+
+# Edit plugin configurations here.
+
+# Please do not change this value to avoid unexpected errors
+version: "0.1.0"
+
+auto-sidebar:
+  on-player-join: true
+
+auto-sidebar-update:
+  always: false
+
+  on-player-chat: true
+  on-player-move: true
+  on-player-mine-block: true
+
+afk:
+  enabled: true
+  timout-seconds: 5

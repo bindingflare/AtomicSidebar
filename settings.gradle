@@ -1,0 +1,5 @@
+rootProject.name = 'AtomicSidebar'
+rootProject.name = 'AtomicSidebar'
+
+enableFeaturePreview('STABLE_PUBLISHING')
+
